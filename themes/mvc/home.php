@@ -23,7 +23,7 @@
 
 <?php $v->start("scripts");?>
 <script type="text/javascript">
-	$('form').on('submit', function (e) {
+	$('form').on('keyup', function (e) {
 		e.preventDefault();			
 		var form = $(this);
 
@@ -40,7 +40,7 @@
 			},
 			success: function (real) {
 				console.log("Ok");
-				$("#dolar").val("");
+				// $("#dolar").val("");
 				$("#real").val("R$" + real);
 			}
 		})
