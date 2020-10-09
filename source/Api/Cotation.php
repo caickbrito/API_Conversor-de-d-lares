@@ -8,7 +8,7 @@ class Cotation
 
 	public function __construct()
 	{
-		$this->url = "https://api.hgbrasil.com/finance";
+		$this->url = "https://api.hgbrasil.com/finance?key=".API_KEY;
 	}
 
 	/**	 
